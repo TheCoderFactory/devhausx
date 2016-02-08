@@ -1,0 +1,303 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require normalize
+ *= require skeleton
+ *= require font-awesome
+ */
+/*div, header, section, aside, footer, nav {
+  border: .1rem dashed lime; }*/
+
+
+.topPanel {
+  width: 100%;
+  height: 4rem;
+  background: #333;
+  position:fixed;
+  z-index: 2;
+}
+i.fa-chevron-down {
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+.scroll-down {
+  width: 8rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  display: inline-block;
+  text-align: left;
+}
+a {
+  color: black;
+}
+.homeSec {  /*menu1*/
+  height: 70rem;
+  background: #79939f;
+  background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
+  background: url("/assets/placeholder1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.serviceSec {  /*menu2*/
+  height: auto;
+  padding: 10% 0;
+  background: #79939f;
+  background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
+  background: url("/assets/placeholder2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.clientSec {  /*menu3*/
+  height: auto;
+  padding: 10% 0;
+  color: white;
+  background: #79939f;
+  background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
+  background: url("/assets/placeholder3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.aboutSec {  /*menu4*/
+  height: auto;
+  padding: 10% 0;
+}
+.journeySec {  /*menu5*/
+  height: auto;
+  padding: 10% 0;
+  background: #79939f;
+  background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
+  background: url("/assets/placeholder4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hiringSec {  /*menu6*/
+  height: auto;
+  padding: 10% 0;
+  background: #79939f;
+  background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
+  background: url("/assets/placeholder3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.resourceSec {  /*menu7*/
+  height: auto;
+  padding: 10% 0;
+  background: #79939f;
+  background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
+  background: url("/assets/placeholder2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contactSec {  /*menu8*/
+  height: auto;
+  padding: 10% 0;
+  background: #79939f;
+  background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
+  background: url("/assets/placeholder4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.white,
+.ghost {
+  height: 80%;
+}
+.white {
+  background: white;
+  padding: 5rem 0;
+}
+.ghost,
+.ghostHire {
+  background: rgba(0,0,0, .4);
+  padding: 3rem;
+  color: white;
+}
+.ghostHire {
+  height: 25rem;
+}
+
+.nav a {
+  padding: 1rem 0 1rem 2rem;
+  float: left;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.nav p {
+  float: right;
+  margin: 0;
+}
+.logo h4 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tagline {
+  position: relative;
+  top: 40rem;
+}
+.tagline h3 {
+  text-align: center;
+}
+/* -- ICONS -- */
+.icon {
+  height: 6rem;
+  margin-bottom: 5rem;
+  font-size: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon .fa-sitemap {
+  font-size: 7rem;
+}
+.icon .fa-desktop {
+  padding-top: .2rem;
+}
+.contact-icon-row {
+  margin: 2rem 0 1rem 0;
+}
+i.fa.fa-envelope {
+  margin: -.1rem 0 0 0;
+  font-size: 3.5rem;
+}
+i.fa.fa-phone {
+  margin: -.1rem 0 0 0;
+  font-size: 4rem;
+}
+i.fa.fa-user {
+  margin: -.1rem 0 0 0;
+  font-size: 3.5rem;
+}
+/* -- ----- -- */
+
+/* -- CLIENTS PANEL -- */
+.clientIcon {
+  margin: 2rem 0 5rem 0;
+}
+.clientPanel {
+  margin: 3rem 0;
+}
+.clientPanel a {
+  color: white;
+  font-weight: 400;
+}
+/* -- ----- -- */
+.breakPage {
+  height: .7rem;
+  background: rgb(120,120,120);
+  position: relative;
+}
+.feature {
+  padding: 0 2rem;
+  text-align: center;
+}
+.resources {
+  margin: 10rem 3rem 0 3rem;
+}
+.peoplePics {
+  margin: 8rem 15rem 0 15rem;
+}
+.peoplePics img,
+.resources img {
+  width: 96%;
+  float: left;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 1);
+  border: 1px solid rgb(120,120,120);
+  margin: 0 1rem 0 0;
+}
+.peoplePics h6,
+.resources h6 {
+  background: white;
+  bottom: 0rem;
+  position: relative;
+  padding: 1rem 1rem 0 0;
+  line-height: 2.1rem;
+}
+.bold {
+  font-weight: 600;
+}
+
+.fa-desktop {
+  font-size: 4.5rem;
+}
+
+/* -- POP -- */
+.pop {
+  position: relative;
+  overflow: hidden;
+}
+.pop:hover .hidden {
+  bottom: 0rem;
+  background: rgba(0,0,0,.7);
+  opacity: 1;
+}
+
+.pop .hidden {
+  width: 97%;
+  color: white;
+  bottom: -8rem;
+  opacity: 0;
+  position: absolute;
+  transition: all 400ms ease-out;
+  -webkit-transition: all 400ms ease-out;
+     -moz-transition: all 400ms ease-out;
+      -ms-transition: all 400ms ease-out;
+       -o-transition: all 400ms ease-out;
+          transition: all 400ms ease-out;
+}
+.hidden p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+.hidden {
+  bottom: 1rem;
+}
+.pop p,
+.hidden p {
+  margin: 1rem 1.5rem 1.2rem 1.5rem;
+}
+
+
+.prefButton {
+  background: rgb(240, 240, 240);
+}
+button i {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.buttonHighlight {
+  background: #33C3F0;
+  border-color: #33C3F0;
+  color: white;
+}
