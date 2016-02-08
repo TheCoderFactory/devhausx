@@ -16,9 +16,6 @@
  *= require skeleton
  *= require font-awesome
  */
-/*div, header, section, aside, footer, nav {
-  border: .1rem dashed lime; }*/
-
 
 .topPanel {
   width: 100%;
@@ -57,7 +54,7 @@ a {
   padding: 10% 0;
   background: #79939f;
   background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
-  background: url("/assets/placeholder2.jpg") no-repeat center center fixed;
+  background: url("") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -84,7 +81,7 @@ a {
   padding: 10% 0;
   background: #79939f;
   background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
-  background: url("/assets/placeholder4.jpg") no-repeat center center fixed;
+  background: url("") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -106,7 +103,7 @@ a {
   padding: 10% 0;
   background: #79939f;
   background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
-  background: url("/assets/placeholder2.jpg") no-repeat center center fixed;
+  background: url("") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

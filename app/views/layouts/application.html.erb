@@ -8,7 +8,38 @@
 </head>
 <body>
 
-<%= yield %>
+	<section class="homeSec" id="menu1">
+	<div class="topPanel">
+	  <div class="container row">
+	    <div class="four columns logo">
+	      <a href="#menu1"><h4>Dev House X</h4></a>
+	    </div>
+
+	    <div class="eight columns nav">
+	      <p>
+	        <a href="#menu2">SERVICES</a>
+	        <a href="#menu3">CLIENTS</a>
+	        <a href="#menu4">ABOUT US</a>
+	        <a href="#menu5">JOURNEY</a>
+	        <a href="#menu6">HIRING</a>
+	        <a href="#menu8">CONTACT US</a>
+	        <a href="" style="color:white;">|</a>
+	       	<a href="#menu7"><%= link_to "RESOURCES", {:controller => "pages", :action => "resources"} %></a>
+	      </p>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="container tagline">
+	    <h3>Nature keeps it simple – so do we<br>
+	    <i class="fa fa-chevron-down"></i>
+	    <div class="scroll-down">Scroll down</div></h3>
+	</div>
+
+	</section>
+
+
+	<%= yield %>
 
 </body>
 </html>
