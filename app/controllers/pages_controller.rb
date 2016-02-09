@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-  	@enquiry = Enquiry.new
+  	@enquiry1 = Enquiry.new
   end
 
   def resources

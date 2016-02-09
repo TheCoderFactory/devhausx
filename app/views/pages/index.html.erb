@@ -187,8 +187,73 @@
       <h4>Let us know how we can help you</h4>
       <div class="row">
         <div class="docs-example docs-example-forms">
+          <%= form_for(@enquiry1) do |f| %>
+            <div class="row">
+              <div class="six columns">
+                <label for="exampleNameInput">Your Name</label>
+                <%= f.text_field :first_name, value:"John",size:"25" %>
+                <%= f.text_field :last_name, value:"Smith",size:"25"%>
+              </div>
+              <div class="five columns">
+                <label for="exampleApptInput">Your reason for contacting us</label>
+                <%= f.select :reason,  [['Development','development'],['Support','support'],['Hiring','hiring'],['Other','other']], {required: 'true', autofocus: 'true', class:'u-full-width'}%>
+              </div>
+            </div>
+            <div class="row contact-icon-row">
+              <h4>How would you like us to contact you?</h4>
+            </div>
+            <div class="row contact-icon">
+              <div class="four columns">
+                <button class="prefButton"><i class="fa fa-envelope"></i></button>
+                <label for="exampleEmailInput">Your email</label>
+                <%= f.text_field :email, value:"me@domain.com", class:"u-full-width" %>
+              </div>
+              <div class="four columns">
+                <button class="prefButton"><i class="fa fa-phone"></i></button>
+                <label for="examplePhoneInput">Your phone</label>
+                <%= f.telephone_field :phone, class:"u-full-width" %>
+              </div>
+              <div class="four columns">
+                <button class="prefButton"><i class="fa fa-user"></i></button>
+                <label for="exampleApptInput">Preferred meeting day</label>
+                <select class="u-full-width" id="exampleApptInput">
+                  <option value="Option 1">Monday</option>
+                  <option value="Option 2">Tuesday</option>
+                  <option value="Option 3">Wednesday</option>
+                  <option value="Option 3">Thursday</option>
+                  <option value="Option 3">Friday</option>
+                </select>
+                <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=20160201T010000Z/20160201T020000Z&details=Dev%20House%20X%20Meeting
+                &location=CoderFactory%2C%207%20Hudson%20St%2C%20Redfern%2C%20NSW">Add to gCal</a>
+              </div>
+            </div>
+          </div>
+
+          <label for="exampleMessage">Message</label>
+          <%= f.text_area :message, class:"u-full-width" %>
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <div class="actions">
+            <%= f.submit "Submit", class:"button-primary"%>
+          </div>        
+          <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="breakPage"></div>
+
+<section class="contactSec" id="menu8">
+  <div class="white">
+    <div class="container row">
+      <h4>Let us know how we can help you</h4>
+      <div class="row">
+        <div class="docs-example docs-example-forms">
           <form>
             <div class="row">
+            
               <div class="four columns">
                 <label for="exampleNameInput">Your name</label>
                 <input class="u-full-width" type="text" placeholder="John Anderson" id="exampleNameInput">
@@ -245,56 +310,6 @@
       </div>
     </div>
   </div>
-</section>
-<section class="contactSec" id="menu8">
-  <div class="white">
-    <div class="container row">
-      <h4>Let us know how we can help you</h4>
-      <div class="row">
-				<%= form_for(@enquiry) do |f| %>
-				  <% if @enquiry.errors.any? %>
-				    <div id="error_explanation">
-				      <h2><%= pluralize(@enquiry.errors.count, "error") %> prohibited this enquiry from being saved:</h2>
-
-				      <ul>
-				      <% @enquiry.errors.full_messages.each do |message| %>
-				        <li><%= message %></li>
-				      <% end %>
-				      </ul>
-				    </div>
-				  <% end %>
-
-				  <div class="field">
-				    <%= f.label :first_name %><br>
-				    <%= f.text_field :first_name %>
-				  </div>
-				  <div class="field">
-				    <%= f.label :last_name %><br>
-				    <%= f.text_field :last_name %>
-				  </div>
-				  <div class="field">
-				    <%= f.label :reason %><br>
-				    <%= f.text_field :reason %>
-				  </div>
-				  <div class="field">
-				    <%= f.label :email %><br>
-				    <%= f.text_field :email %>
-				  </div>
-				  <div class="field">
-				    <%= f.label :phone %><br>
-				    <%= f.number_field :phone %>
-				  </div>
-				  <div class="field">
-				    <%= f.label :message %><br>
-				    <%= f.text_field :message %>
-				  </div>
-				  <div class="actions">
-				    <%= f.submit %>
-				  </div>
-				<% end %>
-			</div>
-		</div>
-	</div>
 </section>
 
 <div class="breakPage"></div>
