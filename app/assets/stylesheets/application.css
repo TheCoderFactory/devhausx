@@ -298,3 +298,23 @@ button i {
   border-color: #33C3F0;
   color: white;
 }
+
+/*For scalable images: div image wrapper and class scale image*/
+.image-wrapper
+{
+  position: relative;
+  text-decoration: none;
+}
+.scale-image
+{
+  display: block;
+  width: auto;
+  max-width: 75%;
+}
+.image-logo
+{
+  display: block;
+  max-width: 75%;
+  height: 60%;
+  width: 60%;  
+}
