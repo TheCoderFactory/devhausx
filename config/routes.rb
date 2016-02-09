@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  resources :enquiries
   get 'pages/index'
 
   get 'pages/resources'
+
+  resources :enquiries
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -59,5 +62,4 @@ Rails.application.routes.draw do
   #   end
   root 'pages#index'
 
-  get '/pages/resources', to: 'pages#resources'
 end

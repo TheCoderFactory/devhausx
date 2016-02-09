@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+#Sucker punch for asynchronous communication and delivery code snippets.
+gem 'sucker_punch', '~> 2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use postgresql as the database for Active Record

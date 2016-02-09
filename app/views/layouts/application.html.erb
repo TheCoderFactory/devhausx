@@ -2,9 +2,15 @@
 <html>
 <head>
   <title>DevHouse</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -16,12 +22,12 @@
 	    </div>
 	    <div class="eight columns nav">
 	      <p>
-	        <a href="#menu2">SERVICES</a>
-	        <a href="#menu3">CLIENTS</a>
-	        <a href="#menu4">ABOUT US</a>
-	        <a href="#menu6">HIRING</a>
-	        <a href="#menu5">JOURNEY</a>
-	        <a href="#menu8">CONTACT US</a>
+	      	<%= link_to "SERVICES", root_path + "#menu2"%>
+	      	<%= link_to "CLIENTS", root_path + "#menu3"%>
+	      	<%= link_to "ABOUT US", root_path + "#menu4"%>
+	      	<%= link_to "JOURNEY", root_path + "#menu5"%>
+	      	<%= link_to "CONTACT", root_path + "#menu8"%>
+	      	<%= link_to "HIRING", root_path + "#menu6"%>
 	        <a href="" style="color:white;">|</a>
 	       	<%= link_to "RESOURCES", {:controller => "pages", :action => "resources"} %>
 	      </p>
@@ -38,6 +44,7 @@
 			</div>
 		</section>
 	<% end %>
+<div class="breakPage"></div>
 
 	<%= yield %>
 
