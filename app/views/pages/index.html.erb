@@ -189,14 +189,14 @@
         <div class="docs-example docs-example-forms">
           <%= form_for(@enquiry1) do |f| %>
             <div class="row">
-              <div class="six columns">
+              <div class="four columns">
                 <label for="exampleNameInput">Your Name</label>
-                <%= f.text_field :first_name, value:"John",size:"25" %>
-                <%= f.text_field :last_name, value:"Smith",size:"25"%>
+                <%= f.text_field :first_name, value:"John",size:"15" %>
+                <%= f.text_field :last_name, value:"Smith",size:"16"%>
               </div>
-              <div class="five columns">
+              <div class="eight columns">
                 <label for="exampleApptInput">Your reason for contacting us</label>
-                <%= f.select :reason,  [['Development','development'],['Support','support'],['Hiring','hiring'],['Other','other']], {required: 'true', autofocus: 'true', class:'u-full-width'}%>
+                <%= f.select :reason,  [['Development','Development'],['Support','Support'],['Hiring','Hiring'],['Other','Other']], {required: 'true', autofocus: 'true', class:'u-full-width'} %>
               </div>
             </div>
             <div class="row contact-icon-row">
@@ -245,6 +245,7 @@
 </section>
 <div class="breakPage"></div>
 
+<!--
 <section class="contactSec" id="menu8">
   <div class="white">
     <div class="container row">
@@ -311,8 +312,8 @@
     </div>
   </div>
 </section>
+-->
 
-<div class="breakPage"></div>
 <section class="hiringSec" id="menu6">
   <div class="container row">
     <h4 class="ghost">We're Growing</h4>
