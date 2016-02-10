@@ -1,5 +1,5 @@
 class EnquiryMailer < ApplicationMailer
-	default from: "Dev House Enquiries <info@coderfactory.com>"
+	default from: "Dev House Enquiry <info@coderfactory.com>"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:

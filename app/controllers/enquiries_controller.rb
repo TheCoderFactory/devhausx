@@ -28,7 +28,7 @@ class EnquiriesController < ApplicationController
     respond_to do |format|
       if @enquiry.save
         @enquiry.send_emails
-        format.html { redirect_to @enquiry, notice: 'Enquiry was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Enquiry was successfully created.' }
         format.json { render :show, status: :created, location: @enquiry }
       else
         format.html { render :new }
