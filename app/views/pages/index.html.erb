@@ -216,13 +216,7 @@
               <div class="four columns">
                 <button class="prefButton"><i class="fa fa-user"></i></button>
                 <label for="exampleApptInput">Preferred meeting day</label>
-                <select class="u-full-width" id="exampleApptInput">
-                  <option value="Option 1">Monday</option>
-                  <option value="Option 2">Tuesday</option>
-                  <option value="Option 3">Wednesday</option>
-                  <option value="Option 3">Thursday</option>
-                  <option value="Option 3">Friday</option>
-                </select>
+                <%= f.date_select :meeting_date %>
                 <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=20160201T010000Z/20160201T020000Z&details=Dev%20House%20X%20Meeting
                 &location=CoderFactory%2C%207%20Hudson%20St%2C%20Redfern%2C%20NSW">Add to gCal</a>
               </div>

@@ -5,8 +5,7 @@ class Enquiry < ActiveRecord::Base
   validates :phone, presence: true
   validates :message, presence: true
   validates :reason, presence: true
-  validates :reason, inclusion: { in: %w(Development Support Hiring Other),
-    message: "%{value} is not a valid reason" }
+  validates :reason, inclusion: { in: %w(Development Support Hiring Other), message: "%{value} is not a valid reason" }
 
   def send_emails
     EnquiryMailerJob.perform_async(self.id)
