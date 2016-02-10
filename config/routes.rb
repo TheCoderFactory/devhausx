@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   resources :enquiries
   get 'pages/index'
-
   get 'pages/resources'
 
-  resources :enquiries
+  get "/enquiries/:id" => "enquiries#show"
+  get "/enquiries/new" => "enquiries#new"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

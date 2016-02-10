@@ -196,7 +196,12 @@
               </div>
               <div class="eight columns">
                 <label for="exampleApptInput">Your reason for contacting us</label>
-                <%= f.select :reason,  [['Development','Development'],['Support','Support'],['Hiring','Hiring'],['Other','Other']], {required: 'true', autofocus: 'true', class:'u-full-width'} %>
+                <%= f.select(:reason, [['Development', 'Development'],
+                                  ['Support', 'Support'],
+                                  ['Hiring', 'Hiring'],
+                                  ['Other', 'Other']],
+                                   {:class => 'u-full-width' }
+                                 ) %>
               </div>
             </div>
             <div class="row contact-icon-row">
@@ -217,8 +222,9 @@
                 <button class="prefButton"><i class="fa fa-user"></i></button>
                 <label for="exampleApptInput">Preferred meeting day</label>
                 <%= f.date_select :meeting_date %>
-                <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=20160201T010000Z/20160201T020000Z&details=Dev%20House%20X%20Meeting
-                &location=CoderFactory%2C%207%20Hudson%20St%2C%20Redfern%2C%20NSW">Add to gCal</a>
+                <% date = DateTime.now.strftime("%Y%m%d") + "T010000Z"%>
+                <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=<%=date%>/<%=date%>&details=Dev%20House%20X%20Meeting
+                &location=CoderFactory%2C%207%20Hudson%20St%2C%20Redfern%2C%20NSW" target="_blank">Add to gCal</a>
               </div>
             </div>
           </div>
@@ -226,7 +232,7 @@
           <label for="exampleMessage">Message</label>
           <%= f.text_area :message, class:"u-full-width" %>
           <label class="example-send-yourself-copy">
-            <input type="checkbox">
+          <%= f.check_box :send_email %>
             <span class="label-body">Send a copy to yourself</span>
           </label>
           <div class="actions">

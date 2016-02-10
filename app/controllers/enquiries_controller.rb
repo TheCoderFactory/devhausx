@@ -1,4 +1,5 @@
 class EnquiriesController < ApplicationController
+  before_action :authenticate_user! , only: :index
   before_action :set_enquiry, only: [:show, :edit, :update, :destroy]
 
   # GET /enquiries
@@ -69,6 +70,6 @@ class EnquiriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def enquiry_params
-      params.require(:enquiry).permit(:first_name, :last_name, :email, :phone, :message, :reason, :meeting_date)
+      params.require(:enquiry).permit(:first_name, :last_name, :email, :phone, :message, :reason, :meeting_date, :send_email)
     end
 end
