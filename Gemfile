@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+#PDF downloader
+gem 'pdfkit'
 #Sucker punch for asynchronous communication and delivery code snippets.
 gem 'sucker_punch', '~> 2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
