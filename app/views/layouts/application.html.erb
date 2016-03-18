@@ -11,10 +11,14 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 
-	<div class="topPanel">
+	<div class="topPanel" id="fixed">
 	  <div class="container row">
 	    <div class="four columns logo">
 	      <%= link_to "<h4>Dev Haus X</h4>".html_safe, root_path %>
@@ -39,7 +43,7 @@
 		<section class="homeSec" id="menu1">
 			<div class="container tagline" style="color:white">
 				<div class="center-align">
-				  <h1>Nature keeps it simple – so do we<br>
+				  <h1 id="header">Nature keeps it simple – so do we<br>
 				  <i class="fa fa-chevron-down"></i></h1>
 				</div>
 			</div>
