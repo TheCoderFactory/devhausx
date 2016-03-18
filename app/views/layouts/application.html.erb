@@ -15,6 +15,16 @@
   <link href='https://fonts.googleapis.com/css?family=Comfortaa:300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75282854-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 
@@ -24,7 +34,7 @@
 	      <%= link_to "<h4>Dev Haus X</h4>".html_safe, root_path %>
 	      <a href="#menu1"></a>
 	    </div>
-	    <div class="eight columns nav">
+	    <div class="eight columns nav .hide-on-med-and-down">
 	      <p>
 	      	<%= link_to "SERVICES", root_path + "#menu2"%>
 	      	<%= link_to "CLIENTS", root_path + "#menu3"%>
@@ -32,15 +42,38 @@
 	      	<%= link_to "JOURNEY", root_path + "#menu5"%>
 	      	<%= link_to "CONTACT", root_path + "#menu8"%>
 	      	<%= link_to "HIRING", root_path + "#menu6"%>
-          <a class='dropdown-button' href='#' data-activates='dropdown1'>LINKS</a>
+	      	<a class="dropdown-button" href="#!" data-activates="dropdown" data-beloworigin="true">OTHER LINKS<i class="mdi-navigation-arrow-drop-down right"></i></a>
 				  <!-- Dropdown Structure -->
-				  <ul id='dropdown1' class='dropdown-content'>
-				    <li><%= link_to "RESOURCES", {:controller => "pages", :action => "resources"} %></li>
-				  </ul>
+				  <ul id="dropdown" class="dropdown-content collection">
+						<%= link_to "RESOURCES", {:controller => "pages", :action => "resources"}, class:'collection-item black-text'%>
+					</ul>
 	      </p>
 	    </div>
+	    <ul class="side-nav waves-effect waves-teal .hide-on-large-only" id="side-menu">
+        <li><a href="/">Home</a></li>
+        <li class="<%= 'active' if current_page?('/learn-to-code') %>"><a href="/learn-to-code">Beginner Workshops</a></li>
+        <li class="<%= 'active' if current_page?('/coding-courses') %>"><a href="/coding-courses">Part Time Courses</a></li>
+        <li class="<%= 'active' if current_page?('/coding-workshops') %>"><a href="/coding-workshops-for-business-and-schools">Business / Schools</a></li>
+        <li><a href="https://coderfactoryacademy.com" target="_blank">Fast Track</a></li>
+        <li><a href="/coding-academy">About us</a></li>
+        <li class="<%= 'active' if current_page?('/blog') %>"><a href="/blog">Blog</a></li>
+        <li class="<%= 'active' if current_page?('/community') %>"><a href="/community">Community</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
 	  </div>
 	</div>
+	<script>
+	$('.dropdown-button').dropdown({
+	    inDuration: 300,
+	    outDuration: 225,
+	    constrain_width: false, // Does not change width of dropdown to that of the activator
+	    hover: true, // Activate on hover
+	    gutter: 0, // Spacing from edge
+	    belowOrigin: false, // Displays dropdown below the button
+	    alignment: 'left' // Displays dropdown with edge aligned to the left of button
+	  }
+	);
+	</script>
 
 	<% if request.env['PATH_INFO'] == '/' %>
 		<section class="homeSec" id="menu1">
