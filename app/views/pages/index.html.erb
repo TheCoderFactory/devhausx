@@ -1,7 +1,17 @@
 
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+<% if request.env['PATH_INFO'] == '/' %>
+    <section class="homeSec" id="menu1">
+      <div class="container tagline" style="color:white">
+        <div class="center-align">
+          <h1 id="header">Nature keeps it simple – so do we<br>
+          <i class="fa fa-chevron-down"></i></h1>
+        </div>
+      </div>
+    </section>
+  <% end %>
+<div class="breakPage"></div>
 <section class="serviceSec" id="menu2">
   <div class="white">
     <div class="container row">
@@ -209,7 +219,7 @@
             </div>
             <div class="row contact-icon">
               <div class="four columns">
-                <i class="fa fa-envelope"></i>
+                <button class="prefButton"><i class="fa fa-envelope"></i></button>
                 <label for="exampleEmailInput">Your email</label>
                 <%= f.text_field :email, value:"me@domain.com", class:"u-full-width" %>
               </div>
