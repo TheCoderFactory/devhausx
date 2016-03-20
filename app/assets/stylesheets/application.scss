@@ -266,31 +266,21 @@ i.fa.fa-user {
   position: relative;
 }
 .feature {
-  padding: 0 2rem;
   text-align: center;
 }
-.resources {
-  margin: 10rem 3rem 0 3rem;
-}
+
 .peoplePics {
-  margin: 8rem 15rem 0 15rem;
+  margin: 8rem 0rem 0 0rem;
 }
 .peoplePics img,
 .resources img {
-  width: 96%;
-  float: left;
+  width:100%;
+  float:left;
   box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 1);
   border: 1px solid rgb(120,120,120);
-  margin: 0 1rem 0 0;
+  margin: 0 0 0 0;
 }
-.peoplePics h6,
-.resources h6 {
-  background: white;
-  bottom: 0rem;
-  position: relative;
-  padding: 1rem 1rem 0 0;
-  line-height: 2.1rem;
-}
+
 .bold {
   font-weight: 600;
 }
@@ -311,7 +301,7 @@ i.fa.fa-user {
 }
 
 .pop .hidden {
-  width: 97%;
+  width: 100%;
   color: white;
   bottom: -8rem;
   opacity: 0;
@@ -333,9 +323,8 @@ i.fa.fa-user {
 }
 .pop p,
 .hidden p {
-  margin: 1rem 1.5rem 1.2rem 1.5rem;
+  margin: 1rem 1rem 1rem 1rem;
 }
-
 
 .prefButton {
   background: rgb(240, 240, 240);
