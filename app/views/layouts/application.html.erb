@@ -54,22 +54,22 @@
 		<div class="hide-on-med-and-up">
 		    <div class="four columns logo">
 		      <%= link_to "<h4>DevHaus X</h4>".html_safe, root_path %>
-		    </div>
-		    <div class="seven columns nav">
-		      <p>
-		      	<a class="dropdown-button black-text" href="" data-activates="dropdown1" data-beloworigin="true"><i class="material-icons">menu</i></a>
-					  <!-- Dropdown Structure -->
-					  <ul id="dropdown1" class="dropdown-content collection">
-							<li><%= link_to "SERVICES", root_path + "#menu2", class:'black-text'%></li>
-		      		<li><%= link_to "CLIENTS", root_path + "#menu3", class:'black-text'%></li>
-		      		<li><%= link_to "ABOUT US", root_path + "#menu4", class:'black-text'%></li>
-		      		<li><%= link_to "JOURNEY", root_path + "#menu5", class:'black-text'%></li>
-		      		<li><%= link_to "CONTACT", root_path + "#menu8", class:'black-text'%></li>
-		      		<li><%= link_to "HIRING", root_path + "#menu6", class:'black-text'%></li>
-		      		<li><%= link_to "RESOURCES", {:controller => "pages", :action => "resources"}, class:'black-text'%></li>
-						</ul>
-		      </p>
-		    </div>
+			    <div class="seven columns nav">
+			      <p>
+			      	<a class="dropdown-button black-text" href="" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true"><i class="material-icons">menu</i></a>
+						  <!-- Dropdown Structure -->
+						  <ul id="dropdown1" class="dropdown-content">
+								<li><%= link_to "SERVICES", root_path + "#menu2", class:'black-text'%></li>
+			      		<li><%= link_to "CLIENTS", root_path + "#menu3", class:'black-text'%></li>
+			      		<li><%= link_to "ABOUT US", root_path + "#menu4", class:'black-text'%></li>
+			      		<li><%= link_to "JOURNEY", root_path + "#menu5", class:'black-text'%></li>
+			      		<li><%= link_to "CONTACT", root_path + "#menu8", class:'black-text'%></li>
+			      		<li><%= link_to "HIRING", root_path + "#menu6", class:'black-text'%></li>
+			      		<li><%= link_to "RESOURCES", {:controller => "pages", :action => "resources"}, class:'black-text'%></li>
+							</ul>
+			      </p>
+			    </div>
+			  </div>
 		  </div>
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 	    inDuration: 300,
 	    outDuration: 225,
 	    constrain_width: false, // Does not change width of dropdown to that of the activator
-	    hover: true, // Activate on hover
+	    hover: false, // Activate on hover
 	    gutter: 0, // Spacing from edge
 	    belowOrigin: false, // Displays dropdown below the button
 	    alignment: 'left' // Displays dropdown with edge aligned to the left of button
@@ -86,6 +86,5 @@
 	);
 	</script>
 	<%= yield %>
-
 </body>
 </html>
