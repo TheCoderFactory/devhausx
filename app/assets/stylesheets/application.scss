@@ -197,6 +197,13 @@ a {
   color: white;
   font-size: 1rem;
 }
+.nav a.mobile{
+  padding: 0.5rem 0 1rem 1rem;
+  float: left;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
 .nav p {
   float: right;
   margin: 0;
@@ -209,6 +216,7 @@ a {
   justify-content: flex-start;
   align-items: center;
 }
+
 .tagline {
   position: relative;
   top: 30rem;
