@@ -14,86 +14,15 @@
     </section>
   <% end %>
 <div class="breakPage"></div>
+
 <section class="serviceSec" id="menu2">
-  <div class="white">
-    <div class="container row">
-      <h4>Our Sevices</h4><hr>
-      <div class="row">
-        <div class="six columns">
-
-          <h5>Support</h5>
-          <div class="row">
-            <div class="three columns">
-              <div class="icon"><i class="fa fa-life-ring"></i></div>
-            </div>
-            <div class="nine columns">
-              <p>Long term or short project-based support.</p>
-            </div>
-          </div>
-
-          <h5>Web Development</h5>
-          <div class="row">
-            <div class="three columns">
-              <div class="icon"><i class="fa fa-desktop"></i></div>
-            </div>
-            <div class="nine columns">
-              <p>New builds or site upgrades including E-commerce, CMS etc.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="six columns">
-          <h5>Mobile Apps</h5>
-          <div class="row">
-            <div class="three columns">
-              <div class="icon"><i class="fa fa-mobile fa-lg"></i></div>
-            </div>
-            <div class="nine columns">
-              <p>IOS, Android.</p>
-            </div>
-          </div>
-
-          <h5>Solution Building</h5>
-          <div class="row">
-            <div class="three columns">
-              <div class="icon"><i class="fa fa-sitemap"></i></div>
-            </div>
-            <div class="nine columns">
-              <p>Full end-to-end project execution, from idea to application and project engineering.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= render 'pages/our_services' %>
 </section>
 
 <div class="breakPage"></div>
 
 <section class="clientSec" id="menu3">
-  <div class="container row">
-    <div class="ghost">
-      <h4>Some of our clients</h4>
-      <div class="row clientPanel">
-        <div class="six columns">
-          <div class="image-wrapper">
-            <h5 class="clientIcon"><a href="http://www.coderfactoryacademy.com" target="_blank"><img src="/assets/CoderFactoryLogo.png" class="image-logo"></a></h5>
-          </div>
-          <div class="image-wrapper">
-          	<h5 class="clientIcon"><a href="http://www.mosh.us" target="_blank"><img src="/assets/mosh_logo.png" class="image-logo"></a></h5>
-          </div>
-        </div>
-        <div class="six columns">
-          <div class="image-wrapper">
-            <h5 class="clientIcon"><a href="http://www.utrex.surge.sh" target="_blank" style="text-decoration: none; color:#FFF" class="image-logo"><h1><strong>UTREX</strong></h1></a></h5>
-          </div>
-          <div class="image-wrapper">
-            <h5 class="clientIcon"><a href="https://mighty-peak-8243.herokuapp.com" target="_blank" style="text-decoration: none;; color:#FFF" class="image-logo"><h1><i>Kaleidoscope</i></h1></a></h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= render 'pages/clients' %>
 </section>
 <div class="breakPage"></div>
 
@@ -131,10 +60,9 @@
         <h6> Academic Director </h6>
       </div>
     </div>
-
-
   </div>
 </section>
+
 <div class="breakPage"></div>
 
 <section class="journeySec" id="menu5">
@@ -262,12 +190,12 @@
     <h4 class="ghost">We're Growing</h4>
     <div class="row">
       <div class="six columns ghostHire">
+        <h5>If you want to join a fun, flexible team of future focused developers, this is the place for you.</h5>
+      </div>
+      <div class="six columns ghostHire">
         <h5>Send us your details.
           <br>We'd love to meet you.</h5>
         <%= mail_to "info@devhousex.com", "<h5>info@devhousex.com</h5>".html_safe %>
-      </div>
-      <div class="six columns ghostHire">
-        <h5>If you want to join a fun, flexible team of future focused developers, this is the place for you.</h5>
       </div>
     </div>
   </div>
