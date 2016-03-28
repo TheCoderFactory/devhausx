@@ -28,177 +28,24 @@
 
 
 <section class="aboutSec" id="menu4">
-  <div class="container row">
-    <h4>About Us</h4><hr>
-    <div class="row">
-      <div class="twelve columns">
-        <p>Dev House X is a software development house providing small to medium customers (SMEs) a clear and definite path to reach their technology goals.</p>
-        <p>Whether you are a startup launching a new idea or an existing business upgrading your services we make the journey simple, transparent and as enjoyable as possible.</p>
-      </div>
-    </div>
-
-    <div class="row peoplePics">
-      <div class="six columns feature">
-        <div class="pop">
-          <img src="/assets/raman.jpg"></a>
-          <div class="hidden">
-            <p>Raman has a career spanning education, executive recruitment and technology in a wide variety of industries including hospitality, security and IT. He lives between Australia and the USA and is passionate about opening and expanding the access to technology education world-wide.</p>
-          </div>
-        </div>
-        <h5>Raman Nambiar</h5>
-        <h6> Managing Director </h6>
-      </div>
-
-      <div class="six columns feature">
-        <div class="pop">
-          <img src="/assets/pete.jpg"></a>
-          <div class="hidden">
-            <p>Pete is passionate about technology and encouraging the community to be involved in creating their future. After a career at IBM, Pete now lives to teach coding and share his love of tech.</p>
-          </div>
-        </div>
-        <h5>Peter Argent</h5>
-        <h6> Academic Director </h6>
-      </div>
-    </div>
-  </div>
+ <%= render 'pages/about_us' %>
 </section>
 
 <div class="breakPage"></div>
 
 <section class="journeySec" id="menu5">
-  <div class="white">
-    <div class="container row">
-      <h4>Your <span class="bold">Dev Haus X</span> journey</h4><hr>
-      <div class="row">
-
-        <table>
-          <tr>
-            <td>Basic Chat</td>
-            <td>Chat about your goals. Are we the right fit?</td>
-          </tr>
-          <tr>
-            <td>Look in the Mirror</td>
-            <td>Let us draft up a simple plan to meet your needs. Does this look like what you had in mind?</td>
-          </tr>
-          <tr>
-            <td>Refinement</td>
-            <td>Let's make sure the plans are 100% right.</td>
-          </tr>
-          <tr>
-            <td>Price &amp Timeframe</td>
-            <td>Let's agree on terms.</td>
-          </tr>
-          <tr>
-            <td>Jump in</td>
-            <td>Meet and kick off.</td>
-          </tr>
-          <tr>
-            <td>Progress Reporting</td>
-            <td>100% transparency through Project Management tools.</td>
-          </tr>
-          <tr>
-            <td>Demo</td>
-            <td>Everything looks on track.</td>
-          </tr>
-          <tr>
-            <td>Feedback Loop</td>
-            <td>Keep on developing.</td>
-          </tr>
-          <tr>
-            <td>Final Release</td>
-            <td>All looking good.</td>
-          </tr>
-          <tr>
-            <td>Launch Stage</td>
-            <td>Smiles all round.</td>
-          </tr>
-
-        </table>
-
-      </div>
-    </div>
-  </div>
+  <%= render 'pages/journey' %>
 </section>
 <div class="breakPage"></div>
 
 <section class="contactSec" id="menu8">
-  <div class="white">
-    <div class="container">
-      <h4>Let us know how we can help you</h4><hr>
-      <div class="row">
-        <div class="docs-example docs-example-forms">
-          <%= form_for(@enquiry1) do |f| %>
-            <div class="row">
-              <div class="four columns">
-                <label for="exampleNameInput">Your Name</label>
-                <%= f.text_field :first_name, value:"John",size:"15" %>
-                <%= f.text_field :last_name, value:"Smith",size:"15"%>
-              </div>
-              <div class="eight columns">
-                <label for="exampleApptInput">Your reason for contacting us</label>
-                <%= f.select(:reason, [['Development', 'Development'],
-                                  ['Support', 'Support'],
-                                  ['Hiring', 'Hiring'],
-                                  ['Other', 'Other']],
-                                   {:class => 'u-full-width' }
-                                 ) %>
-              </div>
-            </div>
-            <div class="row contact-icon-row">
-              <h4>How would you like us to contact you?</h4>
-            </div>
-            <div class="row contact-icon">
-              <div class="four columns">
-                <button class="prefButton"><i class="fa fa-envelope"></i></button>
-                <label for="exampleEmailInput">Your email</label>
-                <%= f.text_field :email, value:"me@domain.com", class:"u-full-width" %>
-              </div>
-              <div class="four columns">
-                <button class="prefButton"><i class="fa fa-phone"></i></button>
-                <label for="examplePhoneInput">Your phone</label>
-                <%= f.telephone_field :phone, class:"u-full-width" %>
-              </div>
-              <div class="four columns">
-                <button class="prefButton"><i class="fa fa-user"></i></button>
-                <label for="exampleApptInput">Preferred meeting day</label>
-                <%= f.date_select :meeting_date %>
-                <% date = DateTime.now.strftime("%Y%m%d") + "T010000Z"%>
-                <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=<%=date%>/<%=date%>&details=Dev%20House%20X%20Meeting
-                &location=CoderFactory%2C%207%20Hudson%20St%2C%20Redfern%2C%20NSW" target="_blank">Add to gCal</a>
-              </div>
-            </div>
-          </div>
-
-          <label for="exampleMessage">Message</label>
-          <%= f.text_area :message, class:"u-full-width" %>
-          <label class="example-send-yourself-copy">
-          <%= f.check_box :send_email %>
-            <span class="label-body">Send a copy to yourself</span>
-          </label>
-          <div class="actions">
-            <%= f.submit "Submit", class:"button-primary"%>
-          </div>        
-          <% end %>
-      </div>
-    </div>
-  </div>
+  <%= render 'pages/enquiry' %>
 </section>
+
 <div class="breakPage"></div>
 
 <section class="hiringSec" id="menu6">
-  <div class="container row">
-    <h4 class="ghost">We're Growing</h4>
-    <div class="row">
-      <div class="six columns ghostHire">
-        <h5>If you want to join a fun, flexible team of future focused developers, this is the place for you.</h5>
-      </div>
-      <div class="six columns ghostHire">
-        <h5>Send us your details.
-          <br>We'd love to meet you.</h5>
-        <%= mail_to "info@devhousex.com", "<h5>info@devhousex.com</h5>".html_safe %>
-      </div>
-    </div>
-  </div>
+  <%= render 'pages/hiring' %>
 </section>
 <div class="breakPage"></div>
 
