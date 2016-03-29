@@ -53,21 +53,22 @@
 		</div>
 		<div class="container">
 			<div class="hide-on-med-and-up">
-					<div class="one columns nav">
-		      	<a class="dropdown-button white-text" href="" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true"><i class="material-icons">menu</i></a>
-					  <!-- Dropdown Structure -->
-					  <ul id="dropdown1" class="dropdown-content">
-							<li><%= link_to "SERVICES", root_path + "#menu2", class:'black-text'%></li>
-		      		<li><%= link_to "CLIENTS", root_path + "#menu3", class:'black-text'%></li>
-		      		<li><%= link_to "ABOUT US", root_path + "#menu4", class:'black-text'%></li>
-		      		<li><%= link_to "JOURNEY", root_path + "#menu5", class:'black-text'%></li>
-		      		<li><%= link_to "CONTACT", root_path + "#menu8", class:'black-text'%></li>
-		      		<li><%= link_to "HIRING", root_path + "#menu6", class:'black-text'%></li>
-		      		<li><%= link_to "RESOURCES", {:controller => "pages", :action => "resources"}, class:'black-text'%></li>
-						</ul>
+				<div class="twelve columns nav">
+	      	<a class="dropdown-button white-text" href="" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true"><i class="material-icons">menu</i></a>
+				  <!-- Dropdown Structure -->
+				  <ul id="dropdown1" class="dropdown-content">
+						<li><%= link_to "SERVICES", root_path + "#menu2", class:'black-text'%></li>
+	      		<li><%= link_to "CLIENTS", root_path + "#menu3", class:'black-text'%></li>
+	      		<li><%= link_to "ABOUT US", root_path + "#menu4", class:'black-text'%></li>
+	      		<li><%= link_to "JOURNEY", root_path + "#menu5", class:'black-text'%></li>
+	      		<li><%= link_to "CONTACT", root_path + "#menu8", class:'black-text'%></li>
+	      		<li><%= link_to "HIRING", root_path + "#menu6", class:'black-text'%></li>
+	      		<li><%= link_to "RESOURCES", {:controller => "pages", :action => "resources"}, class:'black-text'%></li>
+					</ul>
+					<ul>
 						<%= link_to "<h4>DevHaus X</h4>".html_safe, root_path, class:'mobile right'%>
-						<p></p>
-			    </div>
+		    	</ul>
+		    </div>
 			</div>
 		</div>
 	</div>
