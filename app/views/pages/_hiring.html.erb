@@ -1,13 +1,23 @@
   <div class="container row">
     <h4 class="ghost">We're Growing</h4>
-    <div class="row">
-      <div class="six columns ghostHire">
+    <div class="row hide-on-med-only">
+      <div class="six columns ghostHire flow-text">
         <h5>If you want to join a fun, flexible team of future focused developers, this is the place for you.</h5>
       </div>
-      <div class="six columns ghostHire">
+      <div class="six columns ghostHire flow-text">
         <h5>Send us your details.
           <br>We'd love to meet you.</h5>
         <%= mail_to "info@devhousex.com", "<h5>info@devhousex.com</h5>".html_safe %>
+      </div>
+    </div>
+    <div class="row hide-on-small-only hide-on-large-only">
+      <div class="six columns ghostHire flow-text">
+        <h6>If you want to join a fun, flexible team of future focused developers, this is the place for you.</h6>
+      </div>
+      <div class="six columns ghostHire flow-text">
+        <h6>Send us your details.
+          <br>We'd love to meet you.</h6>
+        <%= mail_to "info@devhousex.com", "<h6>info@devhousex.com</h6>".html_safe %>
       </div>
     </div>
   </div>
