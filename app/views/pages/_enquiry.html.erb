@@ -7,8 +7,8 @@
             <div class="row">
               <div class="four columns">
                 <label for="exampleNameInput">Your Name</label>
-                <%= f.text_field :first_name, value:"John",size:"15",  :id => 'name-enquiry' %>
-                <%= f.text_field :last_name, value:"Smith",size:"15",  :id => 'name-enquiry'%>
+                <%= f.text_field :first_name, :placeholder => "John" , size:"15",  :id => 'name-enquiry' %>
+                <%= f.text_field :last_name, :placeholder => "Smith", size:"15",  :id => 'name-enquiry'%>
               </div>
               <div class="eight columns">
                 <label for="exampleApptInput">Your reason for contacting us</label>
@@ -26,7 +26,7 @@
               <div class="four columns">
                 <button class="prefButton"><i class="fa fa-envelope"></i></button>
                 <label for="exampleEmailInput">Your email</label>
-                <%= f.text_field :email, value:"me@domain.com", class:"u-full-width" %>
+                <%= f.text_field :email, :placeholder => "me@domain.com" , class:"u-full-width" %>
               </div>
               <div class="four columns">
                 <button class="prefButton"><i class="fa fa-phone"></i></button>
@@ -45,12 +45,12 @@
           </div>
 
           <label for="exampleMessage">Message</label>
-          <%= f.text_area :message, class:"u-full-width" %>
-          <label class="example-send-yourself-copy">
+          <%= f.text_area :message, :placeholder => "I would like to enquire about...", class:"u-full-width" %>
+          <label class="example-send-yourself-copy left">
           <%= f.check_box :send_email %>
-            <span class="label-body">Send a copy to yourself</span>
+            <span class="label-body">Send yourself a copy</span>
           </label>
-          <div class="actions">
+          <div class="actions right">
             <%= f.submit "Submit", class:"button-primary"%>
           </div>        
           <% end %>
