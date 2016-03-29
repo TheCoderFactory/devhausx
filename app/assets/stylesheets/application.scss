@@ -412,3 +412,11 @@ button i {
   will-change: width, height;
   background-color: rgba(255,255,255,0.25);
 }
+
+#dev{
+   /* Set as display block and auto left/right margins to centre */ 
+   display: block;
+   margin: 0 auto;
+   /* Set select's width */
+   width: 100%;       
+}
