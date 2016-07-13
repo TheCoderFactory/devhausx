@@ -38,8 +38,8 @@
                 <label for="exampleApptInput">Preferred meeting day</label>
                 <%= f.date_select :meeting_date %>
                 <% date = DateTime.now.strftime("%Y%m%d") + "T010000Z"%>
-                  <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=<%=date%>/<%=date%>&details=Dev%20House%20X%20Meeting
-                  &location=CoderFactory%2C%207%20Hudson%20St%2C%20Redfern%2C%20NSW" target="_blank" class="button">Add to gCal</a>
+                  <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=<%=date%>/<%=date%>&details=Dev%20Haus%20X%20Meeting
+                  &location=CoderFactory%2C%207%20Kelly%20St%2C%20Ultimo%2C%20NSW" target="_blank" class="button">Add to gCal</a>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@
           </label>
           <div class="actions right">
             <%= f.submit "Submit", class:"button-primary"%>
-          </div>        
+          </div>
           <% end %>
       </div>
     </div>
