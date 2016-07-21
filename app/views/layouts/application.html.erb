@@ -37,12 +37,12 @@
 		    </div>
 		    <div class="eight columns nav">
 		      <p>
-		      	<%= link_to "SERVICES", root_path + "#menu2"%>
-		      	<%= link_to "CLIENTS", root_path + "#menu3"%>
-		      	<%= link_to "ABOUT US", root_path + "#menu4"%>
-		      	<%= link_to "JOURNEY", root_path + "#menu5"%>
-		      	<%= link_to "CONTACT", root_path + "#menu8"%>
-		      	<%= link_to "HIRING", root_path + "#menu6"%>
+            <a href="#menu2" data-scroll>SERVICES</a>
+            <a href="#menu3" data-scroll>CLIENTS</a>
+            <a href="#menu4" data-scroll>ABOUT US</a>
+            <a href="#menu5" data-scroll>JOURNEY</a>
+            <a href="#menu8" data-scroll>CONTACT</a>
+            <!-- <a href="#menu6" data-scroll>HIRING</a> -->
 		      </p>
 		    </div>
 		  </div>
@@ -57,13 +57,18 @@
 	      		<li><%= link_to "ABOUT US", root_path + "#menu4", class:'black-text'%></li>
 	      		<li><%= link_to "JOURNEY", root_path + "#menu5", class:'black-text'%></li>
 	      		<li><%= link_to "CONTACT", root_path + "#menu8", class:'black-text'%></li>
-	      		<li><%= link_to "HIRING", root_path + "#menu6", class:'black-text'%></li>
+	      		<li><%#= link_to "HIRING", root_path + "#menu6", class:'black-text'%></li>
 					</ul>
 					<%= link_to "<h4>Dev Haus X</h4>".html_safe, root_path, class:'mob right'%>
 		    </div>
 			</div>
 		</div>
 	</div>
+  <script src="/js/smooth-scroll.js"></script>
+  <script>
+    smoothScroll.init();
+  </script>
+
 	<script>
 	$('.dropdown-button').dropdown({
 	    inDuration: 300,

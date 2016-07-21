@@ -26,12 +26,12 @@
               <div class="four columns">
                 <button class="prefButton"><i class="fa fa-envelope"></i></button>
                 <label for="exampleEmailInput">Your email</label>
-                <%= f.text_field :email, :placeholder => "me@domain.com" , class:"u-full-width" %>
+                <%= f.text_field :email, :placeholder => "me@domain.com", class:"u-full-width" %>
               </div>
               <div class="four columns">
                 <button class="prefButton"><i class="fa fa-phone"></i></button>
                 <label for="examplePhoneInput">Your phone</label>
-                <%= f.telephone_field :phone, class:"u-full-width" %>
+                <%= f.telephone_field :phone, class:"u-full-width", :placeholder => "+61 xxx xxx xxx" %>
               </div>
               <div class="four columns">
                 <button class="prefButton"><i class="fa fa-user"></i></button>
@@ -46,10 +46,10 @@
 
           <label for="exampleMessage">Message</label>
           <%= f.text_area :message, :placeholder => "I would like to enquire about...", class:"u-full-width" %>
-          <label class="example-send-yourself-copy left">
-          <%= f.check_box :send_email %>
+          <!-- <label class="example-send-yourself-copy left">
+          <%#= f.check_box :send_email %>
             <span class="label-body">Send yourself a copy</span>
-          </label>
+          </label> -->
           <div class="actions right">
             <%= f.submit "Submit", class:"button-primary"%>
           </div>

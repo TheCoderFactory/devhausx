@@ -130,7 +130,7 @@ a {
   padding: 10% 0;
   background: #79939f;
   background: radial-gradient(closest-corner, rgba(16,47,70,0) 60%, rgba(16,47,70,0.2)),linear-gradient(305deg, #f3ebcb 10%, #003b74 90%);
-  background: url("") no-repeat center center fixed;
+  background: url("/assets/pexels-photo-94730-compressor.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -366,7 +366,7 @@ button i {
   display: block;
   max-width: 75%;
   height: 60%;
-  width: 60%;  
+  width: 60%;
 }
 
 .semi-transparent-card {
@@ -415,9 +415,9 @@ button i {
 }
 
 #dev-enquiry{
-   /* Set as display block and auto left/right margins to centre */ 
+   /* Set as display block and auto left/right margins to centre */
    display: block;
    margin: 0 auto;
    /* Set select's width */
-   width: 100%;       
+   width: 100%;
 }
