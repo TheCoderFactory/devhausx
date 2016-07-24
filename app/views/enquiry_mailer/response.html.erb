@@ -4,46 +4,9 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
-    <h1>Dev House X Enquiry Received.</h1>
-
-    <p>
-    <%= @enquiry.first_name %>, your enquiry has been recieved, you should hear from us within the next few days. Below is a copy of your enquiry.
-    </p>
-
-    <p>
-    <strong>First name:</strong>
-    <%= @enquiry.first_name %>
-    </p>
-
-    <p>
-    <strong>Last name:</strong>
-    <%= @enquiry.last_name %>
-    </p>
-
-    <p>
-    <strong>Phone:</strong>
-    <%= @enquiry.phone %>
-
-    <p>
-    <strong>Email:</strong>
-    <%= @enquiry.email %>
-    </p>
-
-    <p>
-    <strong>The reason you contacted us:</strong>
-    <%= @enquiry.reason %>
-    </p>
-
-    <p>
-    <strong>The preferred meeting time: </strong>
-    <%= @enquiry.meeting_date %>
-    <br><i>We will take  this time into consideration when looking over your enquiry.</i>
-    </p>
-
-    <p>
-    <strong>The message received:</strong>
-    <%= @enquiry.message %>
-    </p>
-
+    <p>Hi <%= @enquiry.first_name %>,</p>
+    <p>Thanks for reaching out to us, we'll be in touch soon.</p>
+    <p>Regards,</p>
+    <p>Dev Haus X Team</p>
   </body>
 </html>
